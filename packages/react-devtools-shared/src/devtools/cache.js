@@ -13,7 +13,7 @@ import * as React from 'react';
 import {createContext} from 'react';
 
 // Cache implementation was forked from the React repo:
-// https://github.com/facebook/react/blob/master/packages/react-cache/src/ReactCache.js
+// https://github.com/facebook/react/blob/main/packages/react-cache/src/ReactCache.js
 //
 // This cache is simpler than react-cache in that:
 // 1. Individual items don't need to be invalidated.
