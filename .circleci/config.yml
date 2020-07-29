@@ -517,7 +517,7 @@ workflows:
       - yarn_test_build_devtools:
           requires:
             - yarn_build
-      # FIXME: Temporarily disabled to unblock master.
+      # FIXME: Temporarily disabled to unblock main.
       # - build_devtools_and_process_artifacts:
       #     requires:
       #       - yarn_build
@@ -530,7 +530,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
     jobs:
       - setup
       - test_fuzz:
