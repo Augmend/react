@@ -11,11 +11,11 @@ const run = async useExperimentalBuild => {
     : 'process_artifacts';
 
   // https://circleci.com/docs/api/#recent-builds-for-a-project-branch
-  const metadataURL = `https://circleci.com/api/v1.1/project/github/facebook/react/tree/master`;
+  const metadataURL = `https://circleci.com/api/v1.1/project/github/facebook/react/tree/main`;
   const metadata = await http.get(metadataURL, true);
   const build = metadata.find(
     entry =>
-      entry.branch === 'master' &&
+      entry.branch === 'main' &&
       entry.status === 'success' &&
       entry.workflows.job_name === targetJobName
   ).build_num;
@@ -26,6 +26,6 @@ const run = async useExperimentalBuild => {
 module.exports = async params => {
   return logPromise(
     run(params),
-    'Determining latest Circle CI for the master branch'
+    'Determining latest Circle CI for the main branch'
   );
 };
