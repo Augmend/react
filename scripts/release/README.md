@@ -25,7 +25,7 @@ If this is your first time running the release scripts, go to the `scripts/relea
 "Next" builds are meant to be lightweight and published often. In most cases, they can be published using artifacts built by Circle CI.
 
 To prepare a build for a particular commit:
-1. Choose a commit from [the commit log](https://github.com/facebook/react/commits/master).
+1. Choose a commit from [the commit log](https://github.com/facebook/react/commits/main).
 2. Click the "“✓" icon and click the Circle CI "Details" link.
 3. Select the `process_artifacts ` job (**not** the `process_artifacts_experimental`job; see the next section)
    * If it's still pending, you'll need to wait for it to finish. <sup>1</sup>
@@ -101,7 +101,7 @@ Begin by creating a branch from the previous git tag<sup>1</sup>:
 git checkout -b 16.8.3 v16.8.2
 ```
 
-Next cherry pick any changes from master that you want to include in the release:
+Next cherry pick any changes from main that you want to include in the release:
 
 ```sh
 git cherry-pick <commit-hash>
