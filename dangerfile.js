@@ -102,7 +102,7 @@ function setBoldness(row, isBold) {
 
 /**
  * Gets the commit that represents the merge between the current branch
- * and master.
+ * and main.
  */
 function git(args) {
   return new Promise(res => {
