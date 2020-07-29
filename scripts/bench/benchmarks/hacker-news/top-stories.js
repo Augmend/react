@@ -32,7 +32,7 @@ window.stories = [
     score: 16,
     time: 1493205989,
     title:
-      'Show HN: BreakLock – A hybrid of Mastermind and the Android pattern lock',
+      'Show HN: BreakLock – A hybrid of Mainmind and the Android pattern lock',
     type: 'story',
     url: 'https://maxwellito.github.io/breaklock/',
   },
